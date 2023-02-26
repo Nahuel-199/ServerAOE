@@ -31,14 +31,14 @@ app.use(errorMiddleware)
 
 connectDatabase()
 
-/* const CLOUDINARY_NAME ="nahue"
+const CLOUDINARY_NAME ="nahue"
 const CLOUDINARY_API_KEY="563213948782747"
-const CLOUDINARY_API_SECRET="Q_YOUSsfn9SOldRytAdgIS-S-zw" */
+const CLOUDINARY_API_SECRET="Q_YOUSsfn9SOldRytAdgIS-S-zw"
 
 cloudinary.config({
-    cloud_name: process.env.CLOUDINARY_NAME,
-    api_key: process.env.CLOUDINARY_API_KEY,
-    api_secret: process.env.CLOUDINARY_API_SECRET,
+    cloud_name: CLOUDINARY_NAME,
+    api_key: CLOUDINARY_API_KEY,
+    api_secret: CLOUDINARY_API_SECRET,
   });
 
 const PORT = process.env.PORT || 5000
